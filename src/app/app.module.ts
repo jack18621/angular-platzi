@@ -1,16 +1,40 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProductComponent } from './components/product/product.component';
+import { CartComponent } from '../app/components/cart/cart.component';
+import { ExponentialPipe } from './pipes/exponential.pipe';
+import { HighlightDirective } from './directives/highlight.directive';
+import { HomeComponent } from './components/home/home.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { DemoComponent } from './components/demo/demo.component';
+import { HeaderComponent } from './components/home/header/header.component';
+import { FooterComponent } from './components/home/footer/footer.component';
+import { BannerComponent } from './components/home/banner/banner.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductComponent,
+    CartComponent,
+    ExponentialPipe,
+    HighlightDirective,
+    HomeComponent,
+    ProductsComponent,
+    ContactComponent,
+    DemoComponent,
+    HeaderComponent,
+    FooterComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Product} from '../app/product.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'platzi-store';
+
+  power=10;
+  
+
+
+
 }
